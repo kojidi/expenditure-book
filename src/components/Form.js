@@ -1,19 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Form.css";
 
 const Form = () => {
+  const [spender, setSpender] = useState("Hamid");
+  // const [check, setCheck] = useState(false);
+  const [hamid, setHamid] = useState(false);
+  const [gholamreza, setGholamreza] = useState(false);
+  const [benyamin, setBenyamin] = useState(false);
+  const [hadi, setHadi] = useState(false);
+
+  const hamidHandler = (event) => {
+    console.log(event.target.checked);
+  };
+
+  const gholamrezaHandler = (event) => {
+    console.log(event.target.value);
+  };
+
+  const benyaminHandler = (event) => {
+    console.log(event.target.value);
+  };
+
+  const hadiHandler = (event) => {
+    console.log(event.target.value);
+  };
+
+  const formSubmitHandler = (event) => {
+    event.preventDefault();
+  };
+
+  const allBtnHandler = () => {
+    // setCheck("checked");
+    setHamid(true);
+  };
+
   return (
     <div className="form-container">
-      <form>
+      <form onSubmit={formSubmitHandler}>
         <div className="selecting-part">
           <div className="inputs-selector">
             <div className="spender-selector">
               <label htmlFor="spender">Spender Name:</label>
               <select id="spender">
-                <option>Hamid</option>
-                <option>Gholamreza</option>
-                <option>Benyamin</option>
-                <option>Hadi</option>
+                <option value="Hamid">Hamid</option>
+                <option value="Gholamreza">Gholamreza</option>
+                <option value="Benyamin">Benyamin</option>
+                <option value="Hadi">Hadi</option>
               </select>
             </div>
 
@@ -36,22 +68,28 @@ const Form = () => {
           <div className="checkbox-selector">
             <h3>For Who:</h3>
             <div>
-              <button className="all-btn btn">All</button>
+              <button onClick={allBtnHandler} className="all-btn btn">
+                All
+              </button>
             </div>
             <div>
-              <input id="hamid" type="checkbox" />
+              <input onChange={hamidHandler} id="hamid" type="checkbox" />
               <label htmlFor="hamid">Hamid</label>
             </div>
             <div>
-              <input id="gholamreza" type="checkbox" />
+              <input
+                onChange={gholamrezaHandler}
+                id="gholamreza"
+                type="checkbox"
+              />
               <label htmlFor="gholamreza">Gholamreza</label>
             </div>
             <div>
-              <input id="benyamin" type="checkbox" />
+              <input onChange={benyaminHandler} id="benyamin" type="checkbox" />
               <label htmlFor="benyamin">Benyamin</label>
             </div>
             <div>
-              <input id="hadi" type="checkbox" />
+              <input onChange={hadiHandler} id="hadi" type="checkbox" />
               <label htmlFor="hadi">Hadi</label>
             </div>
             <div className="buttons">
