@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/expenditure-book/static/css/main.16e8bd2a.chunk.css",
+    "main.css": "/expenditure-book/static/css/main.e528d05c.chunk.css",
     "main.js": "/expenditure-book/static/js/main.96530586.chunk.js",
     "main.js.map": "/expenditure-book/static/js/main.96530586.chunk.js.map",
     "runtime-main.js": "/expenditure-book/static/js/runtime-main.2f779028.js",
@@ -8,13 +8,13 @@
     "static/js/2.9cb9f11e.chunk.js": "/expenditure-book/static/js/2.9cb9f11e.chunk.js",
     "static/js/2.9cb9f11e.chunk.js.map": "/expenditure-book/static/js/2.9cb9f11e.chunk.js.map",
     "index.html": "/expenditure-book/index.html",
-    "static/css/main.16e8bd2a.chunk.css.map": "/expenditure-book/static/css/main.16e8bd2a.chunk.css.map",
+    "static/css/main.e528d05c.chunk.css.map": "/expenditure-book/static/css/main.e528d05c.chunk.css.map",
     "static/js/2.9cb9f11e.chunk.js.LICENSE.txt": "/expenditure-book/static/js/2.9cb9f11e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2f779028.js",
     "static/js/2.9cb9f11e.chunk.js",
-    "static/css/main.16e8bd2a.chunk.css",
+    "static/css/main.e528d05c.chunk.css",
     "static/js/main.96530586.chunk.js"
   ]
 }
