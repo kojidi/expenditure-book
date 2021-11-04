@@ -23,8 +23,8 @@ const Form = () => {
             </div>
 
             <div className="date-input">
-              <label htmlFor="date">Date:</label>
-              <input id="date" type="date" />
+              <label htmlFor="date-picker">Date:</label>
+              <input id="date-picker" type="date" />
             </div>
 
             <div className="for-input">
@@ -36,8 +36,7 @@ const Form = () => {
           <div className="checkbox-selector">
             <h3>For Who:</h3>
             <div>
-              <input id="all" type="checkbox" />
-              <label htmlFor="all">All</label>
+              <button className="all-btn btn">All</button>
             </div>
             <div>
               <input id="hamid" type="checkbox" />
@@ -56,10 +55,10 @@ const Form = () => {
               <label htmlFor="hadi">Hadi</label>
             </div>
             <div className="buttons">
-              <button className="btn" type="submit">
+              <button className=" submit-btn btn" type="submit">
                 Submit
               </button>
-              <button className="btn">Cancel</button>
+              <button className="cancel-btn btn">Cancel</button>
             </div>
           </div>
         </div>
