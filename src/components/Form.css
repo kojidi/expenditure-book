@@ -138,7 +138,12 @@
     border: none;
   }
 
+  .inputs-selector #date-picker {
+    background-color: #fff;
+  }
+
   .checkbox-selector {
+    width: 100%;
     padding-left: 0;
   }
 
@@ -148,7 +153,13 @@
 
   .checkbox-selector input {
     margin-left: 10px;
+    background-color: #fff;
   }
+
+  /* .btn {
+    width: 100%;
+    display: block;
+  } */
 
   .all-btn {
     margin-left: 5px;
