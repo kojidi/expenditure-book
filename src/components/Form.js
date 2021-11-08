@@ -18,6 +18,8 @@ const checkboxReducer = (state, action) => {
 };
 
 const Form = (props) => {
+  const dataLength = props.resultLength;
+  // console.log(dataLength);
   const persons = [
     { id: 1, name: "Hamid", checked: false },
     { id: 2, name: "Gholamreza", checked: false },
@@ -69,7 +71,7 @@ const Form = (props) => {
     event.preventDefault();
 
     const FinalResult = {
-      id: Math.random(),
+      id: dataLength + 1,
       spender: spender,
       money: money,
       date: date,
