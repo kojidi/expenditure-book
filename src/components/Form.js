@@ -27,7 +27,7 @@ const Form = (props) => {
     { id: 4, name: "Hadi", checked: false },
   ];
 
-  const [spender, setSpender] = useState("");
+  const [spender, setSpender] = useState("Hamid");
   const [money, setMoney] = useState("");
   const [date, setDate] = useState("");
   const [forWhat, setForWhat] = useState("");
@@ -59,7 +59,7 @@ const Form = (props) => {
   };
 
   const cancelBtn = () => {
-    setSpender("");
+    setSpender("Hamid");
     setMoney("");
     setDate("");
     setForWhat("");
@@ -84,7 +84,7 @@ const Form = (props) => {
 
     props.sendResult(FinalResult);
 
-    setSpender("");
+    setSpender("Hamid");
     setMoney("");
     setDate("");
     setForWhat("");
