@@ -27,7 +27,7 @@ const Form = (props) => {
     { id: 4, name: "Hadi", checked: false },
   ];
 
-  const [spender, setSpender] = useState("Hamid");
+  const [spender, setSpender] = useState("");
   const [money, setMoney] = useState("");
   const [date, setDate] = useState("");
   const [forWhat, setForWhat] = useState("");
@@ -59,7 +59,10 @@ const Form = (props) => {
   };
 
   const cancelBtn = () => {
-    console.log("Cancel");
+    setSpender("");
+    setMoney("");
+    setDate("");
+    setForWhat("");
   };
 
   useEffect(() => {
@@ -80,6 +83,11 @@ const Form = (props) => {
     };
 
     props.sendResult(FinalResult);
+
+    setSpender("");
+    setMoney("");
+    setDate("");
+    setForWhat("");
   };
 
   return (
